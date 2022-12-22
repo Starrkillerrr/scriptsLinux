@@ -1,0 +1,11 @@
+#Instalar nano
+yum install nano
+
+#El siguiente comando sirve para poner el editor nano como default en el sistema operativo
+nano ˜/.bash_profile
+
+#Agregar al final la siguiente linea
+export VISUAL="nano"
+
+#reinicia el .bash_profile y aplica los cambios
+.˜/.bash_profile
