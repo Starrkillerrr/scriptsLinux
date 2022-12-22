@@ -1,0 +1,12 @@
+#Antes de proceder a instalar Cron, primero deberemos de actualizar los paquetes utilizando el comando
+sudo dnd update
+
+#Procedemos a instalar el demonio de Cron
+sudo dnf install crontabs
+
+#Para iniciar el demonio, ejecutamos el siguiente comando
+sudo systemctl start crond.service
+
+#Con el siguiente comando nos aseguramos que Cron se ejecute cada vez que se inicia o reinicia el sistema operativo
+sudo systemctl enable crond.service
+
