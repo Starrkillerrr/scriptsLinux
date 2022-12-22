@@ -1,0 +1,15 @@
+#Importar el Script al equipo a ejecutar y colocarlo en la ruta /home/user
+#Otorgar permisos de ejecución 
+sudo chmod +x auto-update.sh
+
+#Probar que funcione correctamente ejecutándolo y verificando la salida en el fichero auto_update.log
+sudo ./auto-update.sh
+tail -f /var/log/auto-update.log
+
+#Crear tarea en Cron para que ejecute el Script de acuerdo a la programación que le configuremos
+
+#Abrimos fichero Crontab con su editor de texto favorito, en este caso usaremos nano
+sudo nano /etc/crontab
+
+#Agregar la siguiente línea al final del archivo
+02*** root /home/user/auto-update.sh
