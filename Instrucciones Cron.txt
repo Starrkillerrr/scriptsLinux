@@ -10,3 +10,11 @@ sudo systemctl start crond.service
 #Con el siguiente comando nos aseguramos que Cron se ejecute cada vez que se inicia o reinicia el sistema operativo
 sudo systemctl enable crond.service
 
+#Para editar el Crontab ponemos el siguiente comando
+nano /etc/crontab
+
+#Si quieres revisar el contenido de crontab sin editar, ejecuta el siguiente comando
+crontab -l
+
+
+
