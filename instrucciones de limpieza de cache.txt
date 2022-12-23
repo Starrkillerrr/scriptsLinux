@@ -1,0 +1,10 @@
+#Dar permisos de ejecución de script
+sudo chmod 755 limpiarcache.sh
+
+#Configurar un cron para que se borre la caché de RAM todos los días a las 2:00, abrir crontab
+Crontab -e
+
+#Añadir la siguiente linea donde ejecuta el script
+
+0 2 * * * /home/christian/scripts/limpiarcache.sh
+

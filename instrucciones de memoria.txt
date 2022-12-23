@@ -1,3 +1,0 @@
-#Dar permisos de ejecución de script
-sudo chmod a+x /usr/local/bin/limpiar
-
