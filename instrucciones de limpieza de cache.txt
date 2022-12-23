@@ -8,3 +8,7 @@ Crontab -e
 
 0 2 * * * /home/christian/scripts/limpiarcache.sh
 
+#Otros tipos de limpieza de recursos que deben de utilizarse con cuidado en Linux
+sync; echo 2 > /proc/sys/vm/drop_caches -------->Limpiar dentries e inodos
+sync; echo 3 > /proc/sys/vm/drop_caches -------->Limpiar caché, dentries e inodos
+
